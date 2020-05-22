@@ -151,14 +151,15 @@ header{
     padding-left: 0;
 }
 .headerwrap {
-    background-image: url("../img/bg-intro-desktop.svg");
+    background-image: url(../img/bg-intro-desktop.svg);
     height: 700px;
     position: relative;
     top: -29px;
-    left: 15px;
-    background-position: center;
+    /* left: 15px; */
+    /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position-y: -17rem;
+    /* background-size: cover;*/
 }
 
 /* section about */
@@ -226,7 +227,7 @@ footer .icon-media:hover{
         flex-direction: column-reverse!important;
     }
     .pd-header{
-        padding: 100px 15px 15px 15px;
+        padding: 15px 15px 15px 15px;
         text-align: center;
     }
     #about .container{
