@@ -14,7 +14,7 @@ body{
     color: #91929e;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #47474b;
+     color: #54e7c5;;
 }
 nav ul {
     list-style: none;
@@ -46,7 +46,7 @@ nav.fill ul li a:after {
     width: 0%;
     content: '.';
     color: transparent;
-    background-image: linear-gradient(to right, #31D35C ,#2BB7DA);
+    background-image: linear-gradient(to right, #788EEC ,#5c6bed);
     height: 3px;
 }
 nav.stroke ul li a:hover:after {
@@ -73,9 +73,13 @@ nav.fill ul li a:hover:after {
     opacity: 1;
 }
 .btn-invite{
-    background-image: linear-gradient(to right, #31D35C ,#2BB7DA);
+    background-image: linear-gradient(to right, #54e7c5 ,#5c6bed);
     border-radius: 50px;
     padding: 0px 10px;
+}
+.btn-invite:hover{
+    transition-timing-function: linear;
+    background-image: linear-gradient(to right, #788EEC ,#5c6bed);
 }
 .btn-invite a{
     color: #fff;
@@ -96,9 +100,9 @@ nav.fill ul li a:hover:after {
 }
 .hamburguer{
     margin-bottom: 5px;
-    width: 30px;
+    width: 20px;
     height: 2px;
-    background: #09ce64;
+    background: #54e7c5;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,7 +114,7 @@ nav.fill ul li a:hover:after {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #09ce64;
+    background: #788EEC;
     box-shadow: 0 2px 5px (0,0,0,0.2);
     transition: .5s;
     left:0 ;
@@ -140,10 +144,14 @@ header{
     -moz-box-shadow: 0px 8px 9px -9px rgba(219,219,219,1);
     box-shadow: 0px 8px 9px -9px rgba(219,219,219,1);
 }
+#home h1{
+    /* font-weight: 600; */
+    color: #6898ee;
+}
 /* home */
 .header-img-banner{
     position: absolute;
-    top: -75px;
+    top: 44px;
     right: 0;
     z-index: 0;
 }
@@ -154,46 +162,65 @@ header{
     background-image: url(../img/bg-intro-desktop.svg);
     height: 700px;
     position: relative;
-    top: -29px;
-    /* left: 15px; */
-    /* background-position: center; */
+    /* top: -29px; */
+    left: 15px;
     background-repeat: no-repeat;
-    background-position-y: -17rem;
-    /* background-size: cover;*/
+    background-position-y: 1rem;
+    background-position-x: -1em;
 }
 
 /* section about */
 #about{
     padding: 100px 0;
-    background-color: #F0F3FA;
+    background-color: #f4f4f4;
+}
+b{
+    color: #69e4cd;
+    font-weight: 700;
 }
 #about h1{
     font-weight: 300;
+    color: #6898ee;;
 }
-
-/* section blog */
-#blog{
+#about h3{
+    color: #55cdc5;
+}
+/* contato */
+#contato{
     padding: 100px 0;
-    background-color: #FAFAFA;
+    background-color: #fff;
 }
-#blog h1{
+#contato h1{
     font-weight: 300;
+    color: #6898ee;;
 }
-#blog h5:hover{
-    color: #31D35C;
-    cursor: pointer;
+.btn-whats{
+    /* background-image: linear-gradient(to right, #54e7c5 ,#26de78); */
+    background-image: linear-gradient(to right, #26de78, #54e7c5);
+    border-radius: 50px;
+    padding: 0px 10px;
 }
-#b
-#blog span{
- font-size: 12px;
+.btn-whats:hover{
+    transition: 1s;
+    background-image: linear-gradient(to right, #26de78 ,#54e7c5);
 }
-.card {
-    border: 0 solid rgba(0,0,0,.125);
+.btn-whats a{
+    color: #fff;
 }
-
+.btn-whats a:hover{
+    color: #5c6bed;
+}
 footer{
     padding: 50px 0;
     background-color: #272d49;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #54e7c5;
+    text-decoration: none;
 }
 
 footer ul{
@@ -205,23 +232,27 @@ footer ul li{
     margin: 8px;
 }
 footer ul li:hover{
-    color: #31D35C;
+    color: #54e7c5;
     cursor: pointer;
 }
-footer .icon-media:hover{
-    color: #31D35C;
+i:hover{
+    transition-timing-function: linear;
+    color: #54e7c5;
 }
 /** Mobile **/
 @media only screen and (max-width: 600px) {
     .headerwrap {
-        background-image: url(../img/bg-intro-mobile.svg);
-        height: 413px;
+        background-image: url(../img/bg-intro-desktop.svg);
+        height: 471px;
         position: relative;
         top: 0px;
         left: 15px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-size: cover;
+        background-position-y: 0rem;
+        background-position-x: -1em;
     }
     #home .row{
         flex-direction: column-reverse!important;
