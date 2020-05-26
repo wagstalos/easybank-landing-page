@@ -72,6 +72,9 @@ nav.fill ul li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
+.btn {
+    border: 0 solid transparent;
+}
 .btn-invite{
     background-image: linear-gradient(to right, #54e7c5 ,#5c6bed);
     border-radius: 50px;
